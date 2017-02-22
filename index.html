@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Famou5 Women's Day 2017</title>
+  <script>
+  var randomNumber = Math.floor(Math.random()+1); // is this how one comments in a <script> block?
+  // data format for badasses: name (0), link (1), birth/death (2), short bio (3), image (4)
+  var badass1 = ["Veronica Foster","https://en.wikipedia.org/wiki/Veronica_Foster","January 2, 1922-2000","Popularly known as Ronnie, the Bren Gun Girl, was a Canadian icon representing nearly one million Canadian women who worked in the manufacturing plants that produced munitions and materiel during World War II","img/VeronicaFoster-RonnieBrenGunGirl-smoke.jpg"];
+
+  </script>
+</head>
+<body>
+  <h1 id="badassName">Name</h1>
+  <p id="badassBio"></p>
+  <small id="badassBirth">Birth/Death</small>
+  <img id="badassImage" src="document.write(badass[4])" />
+  <p><a id="badassLink" href="">Check her out.</a></p>
+</body>
+<script>
+  document.getElementById("badassName").innerHTML = badass1[0];
+  document.getElementById("badassLink").setAttribute("href", badass1[1]);
+  document.getElementById("badassBirth").innerHTML = badass1[2];
+  document.getElementById("badassBio").innerHTML = badass1[3];
+  document.getElementById("badassImage").setAttribute("src", badass1[4]);
+</script>
+</html>
