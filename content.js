@@ -1,28 +1,33 @@
+var randomNumber = Math.floor(Math.random()*2);
 
-  var randomNumber = Math.floor(Math.random()*2);
+//==============================================================
+//BADASSES
+//==============================================================
 
-  var badass = new Array();
-  // data format for badasses: name (0), link (1), birth/death (2), short bio (3), image (4)
+var badass = new Array();
+// data format for badasses: name (0), link (1), birth/death (2), short bio (3), image (4)
 
-  badass[0] = new Array("Veronica Foster","https://en.wikipedia.org/wiki/Veronica_Foster","January 2, 1922-2000","Popularly known as \"Ronnie, the Bren Gun Girl\", was a Canadian icon representing nearly one million Canadian women who worked in the manufacturing plants that produced munitions and materiel during World War II.","img/VeronicaFoster-RonnieBrenGunGirl-smoke.png");
+badass[0] = new Array("Maude Abbott","\"Placeholder Nickname\"","Among Canada's earliest female medical graduates, world famous expert on congenital heart disease. ","maude-abbott.jpg","https://en.wikipedia.org/wiki/Maude_Abbott");
 
-  badass[1] = new Array("Elsie MacGill","https://en.wikipedia.org/wiki/Elsie_MacGill","March 27, 1905 - 1980","Known as the\"Queen of the Hurricanes\", was the world's first woman to earn an aeronautical engineering degree.","img/Elsie_macgill.png");
+badass[1] = new Array("Elsie MacGill","https://en.wikipedia.org/wiki/Elsie_MacGill","March 27, 1905 - 1980","Known as the\"Queenof the Hurricanes\", was the world's first woman to earn an aeronautical engineering degree.","img/Elsie_macgill.png");
 
+//==============================================================
+//PRIMARY FUNCTION (EXECUTES WHEN PAGE IS LOADED)
+//==============================================================
 
 document.addEventListener('DOMContentLoaded', function (event) {
   // replaces elements in layout with a random person from the badass array
   document.getElementById("badassName").innerHTML = badass[randomNumber][0];
-  document.getElementById("badassLink").setAttribute("href", badass[randomNumber][1]);
-  document.getElementById("badassBirth").innerHTML = badass[randomNumber][2];
-  document.getElementById("badassBio").innerHTML = badass[randomNumber][3];
-  document.getElementById("badassImage").setAttribute("src", badass[randomNumber][4]);
-
+  document.getElementById("badassLink").setAttribute("href", badass[randomNumber][4]);
+  document.getElementById("badassSub").innerHTML = badass[randomNumber][1];
+  document.getElementById("badassBio").innerHTML = badass[randomNumber][2];
+  document.getElementById("badassImage").setAttribute("src", badass[randomNumber][3]);
 
 // All of this code was stolen from https://paintbycode.github.io/gradient-generator/
 
-    //==============================================================
-    //FUNCTION TO CREATE RANDOM INTEGER
-    //==============================================================
+  //==============================================================
+  //FUNCTION TO CREATE RANDOM INTEGER
+  //==============================================================
     function randInt(min, max) {
         return Math.floor((Math.random() * max) + min);
     }
