@@ -19,20 +19,6 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    /*position: absolute;*/
-    z-index: 0;
-    font-size: 100pt;
-    color: #EE105C;
-    width: 40%;
-    left: 10%;
-    top: 20%;
-    line-height: 90pt;
-    text-transform: uppercase;
-    font-family: Impact;
-    font-style: italic;
-}
-
 .badassCopy{
     position: absolute;
     top: 20%;
@@ -46,6 +32,19 @@ h1 {
     left: 27%;
     top: 55%;
     width: 53%;
+}
+
+h1 {
+    z-index: 0;
+    color: #EE105C;
+    width: 40%;
+    left: 10%;
+    top: 20%;
+    font-size: 86pt;
+    line-height:78pt;
+    text-transform: uppercase;
+    font-family: Impact;
+    font-style: italic;
 }
 
 h2 {
@@ -138,8 +137,8 @@ p {
     }
 
     h1 {
-        font-size: 65pt;
-        line-height: 55pt;
+        font-size: 60pt;
+        line-height: 52pt;
     }
     h2 {
         font-size: 18px;
@@ -159,8 +158,8 @@ p {
         left: 0;
     }
     h1 {
-        font-size: 41pt;
-        line-height: 39pt;
+        font-size: 32pt;
+        line-height: 30pt;
     }
     h2 {
         font-size: 16px;
@@ -187,8 +186,8 @@ p {
 @media screen and (max-width: 375px){
 
     h1 {
-        font-size: 32pt;
-        line-height: 30pt;
+        font-size: 25pt;
+        line-height: 23pt;
     }
     h2 {
         font-size: 14px;
