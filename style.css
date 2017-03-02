@@ -60,7 +60,7 @@ p {
 
 .random{
     text-align: left;
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .random a {
@@ -76,13 +76,22 @@ p {
 
 .famou5-logo{
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 7%;
+    right: 6%;
     width: 100px;
 }
 
+.about-link{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 7%;
+    right: 6%;
+}
+
 /*THEMES*/
-.light p, .light h2{
+.light p, .light h2, .light a{
     color: #000;
 }
 
@@ -94,12 +103,18 @@ p {
     fill:#D41B5D;
 }
 
-.dark p, .dark h2{
+.dark p, .dark h2, .dark a{
     color: #fff;
 }
 
 
 @media screen and (max-width: 1024px){
+    .badassStory{
+        left: 27%;
+        top: 55%;
+        width: 60%;
+    }
+
     h1 {
         font-size: 65pt;
         line-height: 55pt;
@@ -141,6 +156,9 @@ p {
         left: 50%;
         margin-left: -50px;
         width: 100px;
+    }
+    .about-link{
+        display: none;
     }
 }
 
