@@ -3,6 +3,9 @@ body {
     margin:0;
     max-width: 100%;
 }
+.hide-for-extension{
+
+}
 #badassPerson {
     position: relative;
     background-size: 100%;
@@ -69,7 +72,6 @@ p {
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    border: #000 2px solid;
     padding: 15px 40px;
     border-radius: 23px;
 }
@@ -89,6 +91,20 @@ p {
     top: 7%;
     right: 6%;
 }
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a, .social-icons div{
+    display: inline-block;
+}
+.social-icons img, .social-icons .fb-share-button{
+    width: 15px;
+    height: 15px;
+}
+
+.social-icons .twitter{
+    margin-right: 15px;
+}
 
 /*THEMES*/
 .light p, .light h2, .light a{
@@ -102,9 +118,15 @@ p {
 .light .famou5-logo path.pink{
     fill:#D41B5D;
 }
+.light .random a{
+    border: #000 2px solid;
+}
 
 .dark p, .dark h2, .dark a{
     color: #fff;
+}
+.dark .random a{
+    border: #fff 2px solid;
 }
 
 
