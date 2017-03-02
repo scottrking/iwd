@@ -20,6 +20,7 @@ badass[0] = new Array("Elsie MacGill","\"Queenof the Hurricanes\"","https://en.w
 
 badass[1] = new Array("Ethel Catherwood","The \"Prettiest Girl\" at the Games.","https://en.wikipedia.org/wiki/Ethel_Catherwood","Ethel Catherwood was a kickass, gold-medal winning Saskatoonian who didn't give two hoots about other people's dumb opinions. After kicking unparalleled ass at the 1928 Olympics, Ethel got secretly married and divorced in Reno, while the press were all \"BUT ETHEL!\" and Ethel was like, \"You know what? I don't do interviews.\" This athletic goddess brought home what is still Canada's only track-and-field female gold. Thatta girl, Ethel.","img/ethel-catherwood.jpg");
 
+
 //==============================================================
 //PRIMARY FUNCTION (EXECUTES WHEN PAGE IS LOADED)
 //==============================================================
