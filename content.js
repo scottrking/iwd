@@ -27,10 +27,21 @@ badass[1] = new Array("Ethel Catherwood","The \"Prettiest Girl\" at the Games.",
 
 document.addEventListener('DOMContentLoaded', function (event) {
   // replaces elements in layout with a random person from the badass array
-  document.getElementById("badassName").innerHTML = badass[diffDays][0];
-  document.getElementById("badassLink").setAttribute("href", badass[diffDays][2]);
-  document.getElementById("badassSub").innerHTML = badass[diffDays][1];
-  document.getElementById("badassBio").innerHTML = badass[diffDays][3];
-  document.getElementById("badassPerson").style.backgroundImage = "url("+ badass[diffDays][4] +")";
+  document.getElementById("badassName").innerHTML = badass[randomNumber][0];
+  document.getElementById("badassLink").setAttribute("href", badass[randomNumber][2]);
+  document.getElementById("badassSub").innerHTML = badass[randomNumber][1];
+  document.getElementById("badassBio").innerHTML = badass[randomNumber][3];
+  document.getElementById("badassPerson").style.backgroundImage = "url("+ badass[randomNumber][4] +")";
+  document.getElementById("random").addEventListener("click", rando);
 
 });
+
+function rando() {
+    randomNumber = Math.floor(Math.random()*2);
+    document.getElementById("badassName").innerHTML = badass[randomNumber][0];
+    document.getElementById("badassLink").setAttribute("href", badass[randomNumber][2]);
+    document.getElementById("badassSub").innerHTML = badass[randomNumber][1];
+    document.getElementById("badassBio").innerHTML = badass[randomNumber][3];
+    document.getElementById("badassPerson").style.backgroundImage = "url("+ badass[randomNumber][4] +")";
+
+}
