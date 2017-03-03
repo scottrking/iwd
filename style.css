@@ -3,6 +3,9 @@ body {
     margin:0;
     max-width: 100%;
 }
+.hide-for-extension{
+
+}
 #badassPerson {
     position: relative;
     background-size: 100%;
@@ -14,20 +17,6 @@ body {
 a {
     color:white;
     text-decoration: none;
-}
-
-h1 {
-    /*position: absolute;*/
-    z-index: 0;
-    font-size: 100pt;
-    color: #EE105C;
-    width: 40%;
-    left: 10%;
-    top: 20%;
-    line-height: 90pt;
-    text-transform: uppercase;
-    font-family: Impact;
-    font-style: italic;
 }
 
 .badassCopy{
@@ -45,6 +34,19 @@ h1 {
     width: 53%;
 }
 
+h1 {
+    z-index: 0;
+    color: #EE105C;
+    width: 40%;
+    left: 10%;
+    top: 20%;
+    font-size: 86pt;
+    line-height:78pt;
+    text-transform: uppercase;
+    font-family: Impact;
+    font-style: italic;
+}
+
 h2 {
     font-size: 18px;
     text-transform: uppercase;
@@ -58,11 +60,85 @@ p {
     line-height: 1.5;
 }
 
+.random{
+    text-align: left;
+    margin-top: 30px;
+}
+
+.random a {
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 23px;
+}
+
+.famou5-logo{
+    position: absolute;
+    bottom: 7%;
+    right: 6%;
+    width: 100px;
+}
+
+.about-link{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 7%;
+    right: 6%;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a, .social-icons div{
+    display: inline-block;
+}
+.social-icons img, .social-icons .fb-share-button{
+    width: 15px;
+    height: 15px;
+}
+
+.social-icons .twitter{
+    margin-right: 15px;
+}
+
+/*THEMES*/
+.light p, .light h2, .light a{
+    color: #000;
+}
+
+.light .famou5-logo polyline, .light .famou5-logo path, .light .famou5-logo rect{
+    fill: #000;
+}
+
+.light .famou5-logo path.pink{
+    fill:#D41B5D;
+}
+.light .random a{
+    border: #000 2px solid;
+}
+
+.dark p, .dark h2, .dark a{
+    color: #fff;
+}
+.dark .random a{
+    border: #fff 2px solid;
+}
+
 
 @media screen and (max-width: 1024px){
+    .badassStory{
+        left: 27%;
+        top: 55%;
+        width: 60%;
+    }
+
     h1 {
-        font-size: 65pt;
-        line-height: 55pt;
+        font-size: 60pt;
+        line-height: 52pt;
     }
     h2 {
         font-size: 18px;
@@ -73,13 +149,17 @@ p {
 }
 
 @media screen and (max-width: 640px){
+    .random{
+        text-align: center;
+        margin-top: 18%;
+    }
     .badassStory{
         width: 100%;
         left: 0;
     }
     h1 {
-        font-size: 41pt;
-        line-height: 39pt;
+        font-size: 32pt;
+        line-height: 30pt;
     }
     h2 {
         font-size: 16px;
@@ -90,13 +170,24 @@ p {
         font-size: 12px;
         line-height: 1.4;
     }
+
+    .famou5-logo{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        margin-left: -50px;
+        width: 100px;
+    }
+    .about-link{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px){
 
     h1 {
-        font-size: 32pt;
-        line-height: 30pt;
+        font-size: 25pt;
+        line-height: 23pt;
     }
     h2 {
         font-size: 14px;
