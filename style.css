@@ -120,6 +120,9 @@ p {
 .light .random a{
     border: #000 2px solid;
 }
+.dark{
+    background: #000000;
+}
 
 .dark p, .dark h2, .dark a{
     color: #fff;
