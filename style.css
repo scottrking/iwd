@@ -8,7 +8,8 @@ body {
 }
 #badassPerson {
     position: relative;
-    background-size: 100%;
+    background-size: cover;
+    background-position: right top;
     width:100%;
     height:100%;
     background-repeat: no-repeat;
@@ -155,6 +156,9 @@ p {
 }
 
 @media screen and (max-width: 640px){
+    #badassPerson {
+        background-position: center top;
+    }
     .random{
         text-align: center;
         margin-top: 18%;
