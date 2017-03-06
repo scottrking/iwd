@@ -96,7 +96,7 @@ p {
 .social-icons a, .social-icons div{
     display: inline-block;
 }
-.social-icons img, .social-icons .fb-share-button{
+.social-icons svg, .social-icons .fb-share-button{
     width: 15px;
     height: 15px;
 }
@@ -126,6 +126,9 @@ p {
 }
 .dark .random a{
     border: #fff 2px solid;
+}
+.dark .social-icons svg path{
+    fill: #ffffff;
 }
 
 
