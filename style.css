@@ -80,6 +80,13 @@ p {
     position: absolute;
     bottom: 7%;
     right: 6%;
+    width: 80px;
+}
+
+.logo{
+    position: absolute;
+    left: 6%;
+    top: 7%;
     width: 100px;
 }
 
@@ -135,6 +142,9 @@ p, h2, a{
     fill: #ffffff;
 }
 .dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
+    fill: #fff;
+}
+.dark .logo polyline, .dark .logo path, .dark .logo rect{
     fill: #fff;
 }
 .dark .famou5-logo path.pink{
