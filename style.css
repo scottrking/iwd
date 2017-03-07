@@ -22,7 +22,7 @@ a {
 
 .badassCopy{
     position: absolute;
-    top: 20%;
+    top: 8%;
     width: 80%;
     margin: 0 10%;
 }
@@ -179,6 +179,9 @@ p, h2, a{
     .random{
         text-align: center;
         margin-top: 18%;
+    }
+    .badassCopy {
+        top: 20%;
     }
     .badassStory{
         width: 100%;
