@@ -145,7 +145,7 @@ p, h2, a{
 .dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
     fill: #fff;
 }
-.dark .logo polyline, .dark .logo path, .dark .logo rect{
+.dark #bold150type{
     fill: #fff;
 }
 .dark .famou5-logo path.pink{

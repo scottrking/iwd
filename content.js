@@ -14,8 +14,8 @@ var randomNumber = -1;
 
 var badass = new Array();
 // data format for badasses: name (0), nickname or sub-head (1), link (2), short bio (3), image (4)
-badass.push(["Mary Two-Axe Earley","Sexism Got the Chop","Some people, who may or may not be Mary Two-Axe Earley, receive National Achievement awards for their commitment to women's rights, specifically correcting gender discrimination within the Indian Act. Some people are also powerful Clan Mothers who devote their whole lives to organizing and campaigning for justice. ...They also hold a doctorate from York. Actually, yeah, that's all just Mary Two-Axe Earley. She's basically a one-of-a-kind.","img/default","https://en.wikipedia.org/wiki/Mary_Two-Axe_Earley"]);
-badass.push(["Maude Abbott","The Heart of the Matter","I'll give you three guesses why, in 1886, super-genius Maude Abbot was rejected by McGill University …but you're only going to need one. As the first in a series of epic eye-rolls followed by delicious victories, Maude later became the first woman to receive a B.A. from McGill under a full scholarship, and is still recognized as a world authority on life-saving heart surgery. But, you know. Probably women shouldn't go to university.","img/maude-abbott","https://en.wikipedia.org/wiki/Maude_Abbott"]);
+badass.push(["Mary Two-Axe Earley","Sexism Got the Chop","Some people, who may or may not be Mary Two-Axe Earley, receive National Achievement awards for their commitment to women's rights, specifically correcting gender discrimination within the Indian Act. Some people are also powerful Clan Mothers who devote their whole lives to organizing and campaigning for justice. ...They also hold a doctorate from York. Actually, yeah, that's all just Mary Two-Axe Earley. She's basically a one-of-a-kind.","img/default","https://en.wikipedia.org/wiki/Mary_Two-Axe_Earley", "dark"]);
+badass.push(["Maude Abbott","The Heart of the Matter","I'll give you three guesses why, in 1886, super-genius Maude Abbot was rejected by McGill University …but you're only going to need one. As the first in a series of epic eye-rolls followed by delicious victories, Maude later became the first woman to receive a B.A. from McGill under a full scholarship, and is still recognized as a world authority on life-saving heart surgery. But, you know. Probably women shouldn't go to university.","img/default","https://en.wikipedia.org/wiki/Maude_Abbott"]);
 badass.push(["Mary Electa Adams","Badass Chief Preceptress ","Mary Adams held the radical belief that women – wait for it – have brains. Mary traveled all over talking this crazy talk before becoming \"Chief Preceptress,\" (read: \"Boss Lady\") of a school in Sackville, New Brunswick and completely reforming their crap female education programs. Mary felt like, in addition to learning to read the Bible, women could benefit from studying  say: science, mathematics, moral philosophy and Latin. YEP!","img/default","https://en.wikipedia.org/wiki/Mary_Adams_(educator)"]);
 badass.push(["Emma Albani","Qu&eacute;b&eacute;cois Idol","When Emma Albani discovered professional singing was a distasteful career for a woman, she said: \"Okay, I'll just be a nun.\" Pffffft. JK! As a teenager with pipes that'd make Simon Cowell weep, Emma moved to New York and worked odd jobs to afford continuing her musical education.  At her debut performance, fans threw LIVE DOVES at her FACE (which, turns out, is a good thing).","img/default","https://en.wikipedia.org/wiki/Emma_Albani"]);
 badass.push(["Maud Allan","Lewd Lesbian in London","For Maud Allan, \"bold,\" doesn't even come close. Musician, dancer, choreographer and unapologetic social-norms-challenger, in 1918 Maud sued the small-minded MP who accused her of sexual perversion (same guy who thought homosexuals were secretly behind WWI ...yeah) in a sensational trial that drew much-needed attention to freedom of expression and the arts. Maud lost the trial, but you don't see us celebrating Mr. Assface MP a century later.","img/default","https://en.wikipedia.org/wiki/Maud_Allan"]);
@@ -170,19 +170,27 @@ function make() {
     document.getElementById("badassBio").innerHTML = badass[randomNumber][2];
     document.getElementById("badassLink").setAttribute("href", badass[randomNumber][4]);
     if (window.matchMedia("(min-width: 750px)").matches) {
-        document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-big.jpg)";
+        if (badass[randomNumber][5]) {
+            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-big.jpg)";
+        }else{
+            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-big.jpg)";
+        }
     } else {
-        document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-sml.jpg)";
+        if (badass[randomNumber][5]) {
+            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-sml.jpg)";
+        }else{
+            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-sml.jpg)";
+        }
     }
 
     if (badass[randomNumber][5]) {
         document.getElementById("badassPerson").classList.remove('light');
         document.getElementById("badassPerson").classList.add('dark');
-        document.body.style.backgroundColor = "black"
+        document.body.style.backgroundColor = "black";
     } else {
         document.getElementById("badassPerson").classList.add('light');
         document.getElementById("badassPerson").classList.remove('dark');
-        document.body.style.backgroundColor = "white"
+        document.body.style.backgroundColor = "white";
     }
 }
 
@@ -208,6 +216,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     //DEBUG
     next();
-    document.getElementById("Layer_1").addEventListener('click', next);
+    document.getElementById("bold_logo").addEventListener('click', next);
 
 });
