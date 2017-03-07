@@ -8,7 +8,8 @@ body {
 }
 #badassPerson {
     position: relative;
-    background-size: 100%;
+    background-size: cover;
+    background-position: right top;
     width:100%;
     height:100%;
     background-repeat: no-repeat;
@@ -40,12 +41,14 @@ h1 {
     width: 40%;
     left: 10%;
     top: 20%;
-    font-size: 86pt;
-    line-height:78pt;
+    font-size: 100pt;
+    line-height:85pt;
     text-transform: uppercase;
     font-family: Impact;
     font-style: italic;
 }
+
+h1:hover {color: #ff0f61;}
 
 h2 {
     font-size: 18px;
@@ -63,6 +66,7 @@ p {
 .random{
     text-align: left;
     margin-top: 30px;
+    padding-bottom:50px;
 }
 
 .random a {
@@ -79,6 +83,13 @@ p {
     position: absolute;
     bottom: 7%;
     right: 6%;
+    width: 80px;
+}
+
+.logo{
+    position: absolute;
+    left: 4%;
+    top: 1%;
     width: 100px;
 }
 
@@ -94,31 +105,34 @@ p {
     margin-top: 30px;
 }
 .social-icons a, .social-icons div{
-    display: inline-block;
+    display: none;
 }
-.social-icons img, .social-icons .fb-share-button{
+.social-icons svg, .social-icons .fb-share-button{
     width: 15px;
     height: 15px;
 }
 
-.social-icons .twitter{
+.social-icons .Twitter{
     margin-right: 15px;
 }
 
 /*THEMES*/
-.light p, .light h2, .light a{
+p, h2, a{
     color: #000;
 }
 
-.light .famou5-logo polyline, .light .famou5-logo path, .light .famou5-logo rect{
+ .famou5-logo polyline, .famou5-logo path, .famou5-logo rect{
     fill: #000;
 }
 
-.light .famou5-logo path.pink{
+.famou5-logo path.pink{
     fill:#D41B5D;
 }
 .light .random a{
     border: #000 2px solid;
+}
+.dark{
+    backgroundd: #000000;
 }
 
 .dark p, .dark h2, .dark a{
@@ -126,6 +140,18 @@ p {
 }
 .dark .random a{
     border: #fff 2px solid;
+}
+.dark .social-icons svg path{
+    fill: #ffffff;
+}
+.dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
+    fill: #fff;
+}
+.dark .logo polyline, .dark .logo path, .dark .logo rect{
+    fill: #fff;
+}
+.dark .famou5-logo path.pink{
+    fill:#D41B5D;
 }
 
 
@@ -137,8 +163,8 @@ p {
     }
 
     h1 {
-        font-size: 60pt;
-        line-height: 52pt;
+        font-size: 64pt;
+        line-height: 55pt;
     }
     h2 {
         font-size: 18px;
@@ -149,6 +175,9 @@ p {
 }
 
 @media screen and (max-width: 640px){
+    #badassPerson {
+        background-position: center top;
+    }
     .random{
         text-align: center;
         margin-top: 18%;
@@ -158,8 +187,8 @@ p {
         left: 0;
     }
     h1 {
-        font-size: 32pt;
-        line-height: 30pt;
+        font-size: 36pt;
+        line-height: 32pt;
     }
     h2 {
         font-size: 16px;
@@ -178,16 +207,13 @@ p {
         margin-left: -50px;
         width: 100px;
     }
-    .about-link{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 375px){
 
     h1 {
-        font-size: 25pt;
-        line-height: 23pt;
+        font-size: 30pt;
+        line-height: 27pt;
     }
     h2 {
         font-size: 14px;
