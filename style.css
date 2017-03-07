@@ -35,6 +35,8 @@ a {
     width: 53%;
 }
 
+h1:hover {color: #ff0f61;}
+
 h1 {
     z-index: 0;
     color: #EE105C;
@@ -47,8 +49,6 @@ h1 {
     font-family: Impact;
     font-style: italic;
 }
-
-h1:hover {color: #ff0f61;}
 
 h2 {
     font-size: 18px;
@@ -105,7 +105,7 @@ p {
     margin-top: 30px;
 }
 .social-icons a, .social-icons div{
-    display: none;
+    display: inline-block;
 }
 .social-icons svg, .social-icons .fb-share-button{
     width: 15px;
@@ -147,11 +147,7 @@ p, h2, a{
 .dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
     fill: #fff;
 }
-<<<<<<< HEAD
-.dark .logo polyline, .dark .logo path, .dark .logo rect{
-=======
 .dark #bold150type{
->>>>>>> cdca8917ad8b5e104aae7eb6894340489fd2a413
     fill: #fff;
 }
 .dark .famou5-logo path.pink{
