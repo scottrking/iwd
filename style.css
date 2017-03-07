@@ -102,20 +102,20 @@ p {
     height: 15px;
 }
 
-.social-icons .twitter{
+.social-icons .Twitter{
     margin-right: 15px;
 }
 
 /*THEMES*/
-.light p, .light h2, .light a{
+p, h2, a{
     color: #000;
 }
 
-.light .famou5-logo polyline, .light .famou5-logo path, .light .famou5-logo rect{
+ .famou5-logo polyline, .famou5-logo path, .famou5-logo rect{
     fill: #000;
 }
 
-.light .famou5-logo path.pink{
+.famou5-logo path.pink{
     fill:#D41B5D;
 }
 .light .random a{
@@ -133,6 +133,12 @@ p {
 }
 .dark .social-icons svg path{
     fill: #ffffff;
+}
+.dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
+    fill: #fff;
+}
+.dark .famou5-logo path.pink{
+    fill:#D41B5D;
 }
 
 
@@ -187,9 +193,6 @@ p {
         left: 50%;
         margin-left: -50px;
         width: 100px;
-    }
-    .about-link{
-        display: none;
     }
 }
 
