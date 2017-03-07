@@ -17,9 +17,9 @@ var badass = new Array();
 
 badass.push([
     "Elsie MacGill",
-    "\"Queenof the Hurricanes\"",
+    "\"Queen of the Hurricanes\"",
     "https://en.wikipedia.org/wiki/Elsie_MacGill",
-    "First female airplaine designer, and the world's first woman to earn an aeronautical engineering degree. She designed war planes, all the while wearing pants. That's right. She contracted polio and was told she would never walk again. Obviously she didn't have time for such bullshit so she engineered herself some canes and kept on being an absolute boss.",
+    "The first female airplane designer and the world’s first woman to earn an aeronautical engineering degree, Elsie MacGill wore the pants. (Which was super scandalous at the time, oh my.) Elsie contracted polio and was told she’d never walk again, but girlfriend didn’t have time for that noise. She engineered herself some canes so she could continue her day-to-day of being an absolute boss.",
     "img/elise-macgill"
 ]);
 badass.push([
@@ -40,53 +40,52 @@ badass.push([
 badass.push([
     "Anne Hébert",
     "Triple Threat",
-    "",
+    "https://en.wikipedia.org/wiki/Anne_H%C3%A9bert",
     "Throughout her long and varied career as a poet, playwright and novelist, Anne Hébert earned a list of accolades that basically makes her the Beyoncé of French-Canadian literature. Plus, this single lady won the Governor General’s Award three times. And she was appointed a Companion of the Order of Canada. Who run the world, indeed.",
     "img/anne-hebert"
 ]);
 badass.push([
     "Carrie Derick",
     "Genius Geneti-sister",
-    "",
+    "https://en.wikipedia.org/wiki/Carrie_Derick",
     "What did years of tireless no-crap taking and relentless research in genetics get Carrie Derick? 3 points for guessing \"the honour of becoming Canada's first female university professor.\" Minus 2 points for forgetting that she was awarded a third the salary of her male counterparts. And this was after she did everything to earn her PhD (except have a penis).",
     "img/carrie-derick"
 ]);
 badass.push([
     "Catherine Schubert",
     "I'm Coming with You, End of Discussion.",
-    "",
+    "http://www.cbc.ca/archives/entry/catherine-schubert-crosses-the-rockies-in-1862",
     "In 1862, when her husband decided to follow the gold prospectors to British Columbia, Catherine Schubert was like, \"Ohhhhh heck no. You think you're leaving me here with three little kids?\" So, four-months-pregnant Catherine packed up her children (5, 3 and 1), and travelled West through fricken freezing, treacherous surroundings. Lady went into labour on a RAFT and became the first woman ever to cross Canada from East to West.",
     "img/catherine-schubert"
 ]);
 badass.push([
     "Cathleen Synge Morawetz",
     "Riding the High Frequency Wave",
-    "",
+    "https://en.wikipedia.org/wiki/Cathleen_Synge_Morawetz",
     "Cathleen Synge Morawetz pioneered advances in partial differential equations and wave propagation math. (Don’t Google that and pretend you know what it means. No one does. Except for Cathleen.) She put those concepts to work in aerodynamic, acoustic and optic fields, improving everyone’s lives. She was told her family would suffer if she went to work, which is probably why she has four successful children and six grandchildren.",
     "img/cathleen-synge-morawetz"
 ]);
 badass.push([
     "Clara Brett Martin",
     "Clara Martin,  Juris Doctor",
-    "",
+    "https://en.wikipedia.org/wiki/Clara_Brett_Martin",
     "Clara Brett Martin was a smart little girl who ( got her B.A. in mathematics at 16) did lots of nice things (petitioned the Law Society of Upper Canada to let her in despite her gender) had nice hobbies (paved the way for women to become lawyers in Canada) and read lots of nice books (understood the importance of education to the future for Canadian women, especially in traditionally masculine fields) and, you know. Nice stuff like that.",
     "img/clara-brett-martin"
 ]);
 badass.push([
     "Elizabeth Smellie ",
     "Matron-in-Chief",
-    "",
+    "https://en.wikipedia.org/wiki/Elizabeth_Lawrie_Smellie",
     "\"Ew, blood!\" said Dr. Elizabeth Smellie never. After patching up the WWII wounded, Elizabeth hit up McGill University to teach another generation of nurses how to kick ass. You know… medically speaking. After that, in competition only with herself, Lizzy served as the first female colonel in the Canadian army as the medical corps’ matron-in-chief in WWII. Yeah, \"matron-in-chief.\" AKA: Lady. Boss.",
     "img/elizabeth-smellie"
 ]);
 badass.push([
     "Emily Carr",
     "Becoming a National Icon",
-    "",
+    "https://en.wikipedia.org/wiki/Emily_Carr",
     "Some people (you) are described as Canadian. Other people (not you) are described as inspiring Canadian icons. But don’t worry – there’s totally hope! All you’ve gotta do is: represent the national imagination through incredible innovative art, win a couple writing awards,  succeed against basically all odds and have a bunch of institutions named for your bravery. So like, probably get going on that.",
     "img/emily-carr"
 ]);
-
 
 function make() {
     // replaces elements in layout with a random person from the badass array
