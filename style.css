@@ -22,7 +22,7 @@ a {
 
 .badassCopy{
     position: absolute;
-    top: 20%;
+    top: 8%;
     width: 80%;
     margin: 0 10%;
 }
@@ -38,7 +38,7 @@ a {
 h1 {
     z-index: 0;
     color: #EE105C;
-    width: 40%;
+    width: 55%;
     left: 10%;
     top: 20%;
     font-size: 100pt;
@@ -147,7 +147,11 @@ p, h2, a{
 .dark .famou5-logo polyline, .dark .famou5-logo path, .dark .famou5-logo rect{
     fill: #fff;
 }
+<<<<<<< HEAD
 .dark .logo polyline, .dark .logo path, .dark .logo rect{
+=======
+.dark #bold150type{
+>>>>>>> cdca8917ad8b5e104aae7eb6894340489fd2a413
     fill: #fff;
 }
 .dark .famou5-logo path.pink{
@@ -181,6 +185,9 @@ p, h2, a{
     .random{
         text-align: center;
         margin-top: 18%;
+    }
+    .badassCopy {
+        top: 20%;
     }
     .badassStory{
         width: 100%;
