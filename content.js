@@ -161,42 +161,17 @@ badass.push(["Ellen Page","\"I Am Tired of Hiding\"","Ellen Page is cooler than 
 function make() {
     // replaces elements in layout with a random person from the badass array
     document.getElementById("badassName").innerHTML = badass[randomNumber][0];
-    document.getElementById("badassLink").setAttribute("href", badass[randomNumber][2]);
-    document.getElementById("badassSub").innerHTML = badass[randomNumber][1];
-    document.getElementById("badassBio").innerHTML = badass[randomNumber][3];
-    if (window.matchMedia("(min-width: 750px)").matches) {
-        /* the viewport is at least 400 pixels wide */
-        document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][4] + "-big.jpg)";
-    } else {
-        /* the viewport is less than 400 pixels wide */
-        document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][4] + "-sml.jpg)";
-    }
-
-    if (badass[randomNumber][5]) {
-        document.getElementById("badassPerson").classList.remove('light');
-        document.getElementById("badassPerson").classList.add('dark');
-        document.body.style.backgroundColor = "black"
-    } else {
-        document.getElementById("badassPerson").classList.add('light');
-        document.getElementById("badassPerson").classList.remove('dark');
-        document.body.style.backgroundColor = "white"
-    }
-}
-
-function make() {
-    // replaces elements in layout with a random person from the badass array
-    document.getElementById("badassName").innerHTML = badass[randomNumber][0];
     document.getElementById("badassSub").innerHTML = badass[randomNumber][1];
     document.getElementById("badassBio").innerHTML = badass[randomNumber][2];
     document.getElementById("badassLink").setAttribute("href", badass[randomNumber][4]);
     if (window.matchMedia("(min-width: 750px)").matches) {
-        if (badass[randomNumber][5]) {
+        if (badass[randomNumber][5]==="dark") {
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-big.jpg)";
         }else{
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-big.jpg)";
         }
     } else {
-        if (badass[randomNumber][5]) {
+        if (badass[randomNumber][5]==="dark") {
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-sml.jpg)";
         }else{
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-sml.jpg)";
