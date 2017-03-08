@@ -165,20 +165,21 @@ function make() {
     document.getElementById("badassBio").innerHTML = badass[randomNumber][2];
     document.getElementById("badassLink").setAttribute("href", badass[randomNumber][4]);
     if (window.matchMedia("(min-width: 750px)").matches) {
-        if (badass[randomNumber][5]==="dark") {
-            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-big.jpg)";
+        console.log(badass[randomNumber][3]);
+        if(badass[randomNumber][3] === "img/default"){
+            document.getElementById("badassPerson").style.backgroundImage = "url(img/default-dark-big.jpg)";
         }else{
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-big.jpg)";
         }
     } else {
-        if (badass[randomNumber][5]==="dark") {
-            document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-dark-sml.jpg)";
+        if(badass[randomNumber][3] === "img/default"){
+            document.getElementById("badassPerson").style.backgroundImage = "url(img/default-dark-sml.jpg)";
         }else{
             document.getElementById("badassPerson").style.backgroundImage = "url(" + badass[randomNumber][3] + "-sml.jpg)";
         }
     }
 
-    if (badass[randomNumber][5]) {
+    if (badass[randomNumber][5]==="dark") {
         document.getElementById("badassPerson").classList.remove('light');
         document.getElementById("badassPerson").classList.add('dark');
         document.body.style.backgroundColor = "black";
