@@ -1,10 +1,9 @@
 var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-var firstDate = new Date(2017, 2, 8);
+var firstDate = new Date(2017, 2, 9);
 var currentDate = new Date();
 
 var randomNumber = Math.round((currentDate.getTime() - firstDate.getTime()) / oneDay);
-
-
+console.log(randomNumber);
 
 //==============================================================
 //BADASSES
