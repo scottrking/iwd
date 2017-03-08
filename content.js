@@ -231,11 +231,11 @@ function rando() {
 
 document.addEventListener('DOMContentLoaded', function (event) {
 
-    //rando();
+    rando();
     document.getElementById("random").addEventListener("click", rando);
 
     //DEBUG
-    next();
-    document.getElementById("bold_logo").addEventListener('click', next);
+    // next();
+    // document.getElementById("bold_logo").addEventListener('click', next);
 
 });
