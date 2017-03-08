@@ -1,4 +1,10 @@
-var randomNumber = -1;
+var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+var firstDate = new Date(2017, 2, 8);
+var currentDate = new Date();
+
+var randomNumber = Math.round((currentDate.getTime() - firstDate.getTime()) / oneDay);
+
+
 
 //==============================================================
 //BADASSES
@@ -207,7 +213,11 @@ function rando() {
 
 document.addEventListener('DOMContentLoaded', function (event) {
 
-    rando();
+    if(randomNumber > badass.length){
+        rando();
+    }else{
+        make();
+    }
     document.getElementById("random").addEventListener("click", rando);
 
     //DEBUG
